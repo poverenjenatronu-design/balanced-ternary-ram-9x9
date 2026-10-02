@@ -26,7 +26,7 @@ Open `WEB_DEMO.html` in any browser. No Vivado, no Basys 3 required.
 
 ## FULL PROCESSOR
 Want full C-CORE ternary CPU? Research Trial $29 on Gumroad:
-https://poverenjenatronu-design.gumroad.com/l/c-core-basys3-research
+https://6318682165690.gumroad.com/l/c-core-basys3-research
 
 
 Contact: poverenjenatronu@gmail.com
