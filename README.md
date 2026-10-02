@@ -1,28 +1,32 @@
-C-CORE - Private Logic Module for Basys 3 [Research Edition] - UPDATE 2.0
-======================================================================
-Link: 6318682165690.gumroad.com/l/c-core-basys3-research
+# Ternary RAM 9x9 - Balanced Ternary (81 trits, 18 LUTs) - V2.0
 
-UPDATE 2.0 - Native Ternary RAM 9x9
-- 81 trits = 9x9 matrix
-- Only 18 LUTs on Artix-7 xc7a35t (<0.02%)
-- Encoding: 00 = -1 (BLACK), 01 = 0 (GRAY), 10 = 1 (WHITE)
-- No binary emulation, native 3 states
+UPDATE 2.0 - Added WEB_DEMO that works WITHOUT board.
 
-FILES:
-1. ternary_ram_9x9.vhd - 9 address x 18 bits (9 trits per row)
-2. vga_ternary_9x9.vhd - VGA 640x480, 40px per trit
-3. top_ternary_demo3.vhd - Top that connects RAM + VGA
-4. WEB_DEMO.html - Interactive demo, works without Basys 3 board
+The most LUT-efficient balanced ternary RAM on FPGA. Real ternary logic (-1, 0, +1) = 81 trits per 9x9 block, only 18 LUTs on Artix-7.
 
-HOW TO USE WITHOUT VIVADO:
-Open WEB_DEMO.html in browser -> click squares to change -1/0/1 -> click Export VHDL
+1 TRYTE = 9 trits ≈ 14.2 bits. No binary simulation.
 
-HOW TO USE WITH VIVADO:
-Add all 3 .vhd files to Vivado project for Basys 3, set top_ternary_demo3 as top
+## FILES (FREE)
+- `ternary_ram_9x9.vhd` - core RAM (934 bytes)
+- `vga_ternary_9x9.vhd` - VGA driver for ternary display
+- `top_ternary_demo3.vhd` - top wrapper for Basys 3
+- `WEB_DEMO.html` - try it in browser, NO BOARD NEEDED
+- `README.md`
 
-BOARD: Basys 3 xc7a35tcpg236-1
+## WEB DEMO
+Open `WEB_DEMO.html` in any browser. No Vivado, no Basys 3 required.
 
-GitHub (free RAM): github.com/your-username/balanced-ternary-ram-9x9
-Full CPU+RAM integration is in this paid package.
+## HOW TO USE ON BASYS 3
+1. Vivado 2022.2 -> Create Project -> Basys 3 (xc7a35tcpg236-1)
+2. Add all .vhd + basys3_fixed.xdc (from release)
+3. Synthesize -> Implement -> Generate Bitstream -> Program
 
-License: Research / Non-commercial
+## SPECS
+81 trits, 18 LUTs, 0 BRAM. Tested on Digilent Basys 3.
+
+## FULL PROCESSOR
+Want full C-CORE ternary CPU? Research Trial $29 on Gumroad:
+https://poverenjenatronu-design.gumroad.com/l/c-core-basys3-research
+
+DOI: 10.5281/zenodo.23045369
+Contact: poverenjenatronu@gmail.com
