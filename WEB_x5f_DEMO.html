@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ternary RAM 9x9 - Interactive Demo</title>
+<style>
+body{font-family:system-ui;background:#111;color:#eee;text-align:center;padding:20px}
+.grid{display:grid;grid-template-columns:repeat(9,40px);gap:3px;justify-content:center;margin:20px auto}
+.cell{width:40px;height:40px;border:1px solid #333;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:bold}
+.s-1{background:#000;color:#fff}
+.s0{background:#888;color:#fff}
+.s1{background:#fff;color:#000}
+button{background:#ff90e8;color:#000;border:0;padding:12px 20px;border-radius:8px;font-weight:bold;margin:10px;cursor:pointer}
+pre{background:#222;padding:15px;text-align:left;overflow:auto;max-width:600px;margin:20px auto;border-radius:8px;font-size:12px}
+</style>
+</head>
+<body>
+<h2>C-CORE - Ternary RAM 9x9 - 81 Trits</h2>
+<p>Click cell to change: BLACK=-1, GRAY=0, WHITE=+1 | 18 LUTs on Artix-7</p>
+<div class="grid" id="grid"></div>
+<button onclick="exportVHDL()">Export VHDL INIT</button>
+<button onclick="randomize()">Randomize</button>
+<pre id="out">-- Click Export to get VHDL init</pre>
+<script>
+const rows=9, cols=9;
+let data=Array(rows).fill(0).map(()=>Array(cols).fill(0));
+function render(){
+ const g=document.getElementById('grid'); g.innerHTML='';
+ for(let r=0;r<rows;r++) for(let c=0;c<cols;c++){
+  const d=document.createElement('div'); d.className='cell '+(data[r][c]==-1?'s-1':data[r][c]==0?'s0':'s1');
+  d.textContent=data[r][c]; d.onclick=()=>{data[r][c]=data[r][c]==-1?0:data[r][c]==0?1:-1; render();}; g.appendChild(d);
+ }
+}
+function tritToBits(v){return v==-1?"00":v==0?"01":"10";}
+function exportVHDL(){
+ let vhd="-- Ternary RAM 9x9 INIT - 81 trits\n-- 00=-1 BLACK, 01=0 GRAY, 10=1 WHITE\n";
+ for(let r=0;r<rows;r++){
+  let bits=""; let trits="";
+  for(let c=cols-1;c>=0;c--){bits+=tritToBits(data[r][c]); trits+=data[r][c]+" ";}
+  vhd+=`RAM(${r}) <= "${bits}"; -- ${trits}\n`;
+ }
+ document.getElementById('out').textContent=vhd;
+}
+function randomize(){for(let r=0;r<rows;r++) for(let c=0;c<cols;c++) data[r][c]=[-1,0,1][Math.floor(Math.random()*3)]; render();}
+render();
+</script>
+</body>
+</html>
