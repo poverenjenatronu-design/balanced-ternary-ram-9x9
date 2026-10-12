@@ -1,16 +1,42 @@
-MIT License
+MIT License - Research & Personal Use Edition
+Dual-Licensed with CC BY-NC 4.0 on Zenodo
 
-Copyright (c) 2026 Bojan Govedarica (aka Goran Bojanic / lekabojan - poverenjenatronu-design)
+Copyright (c) 2026 Bojan Govedarica
+Banja Luka, Republika Srpska, BA
+Contact: poverenjenatronu@gmail.com
+
+DUAL-LICENSE MODEL:
+
+1. RESEARCH / PERSONAL / EDUCATION: FREE
+      - GitHub: MIT License (for research/personal only, see below)
+      - Zenodo: CC BY-NC 4.0
+      - DOI 1: 10.5281/zenodo.23045369 - 3D Bojan 729 elements
+      - DOI 2: 10.5281/zenodo.23324784 - Ternary RAM 9x9 81 trits
+      - OpenAIRE: https://explore.openaire.eu/search/publication?pid=10.5281/zenodo.23045369
+
+2. COMMERCIAL USE: REQUIRES PAID LICENSE
+      - You MUST buy commercial license before commercial use
+      - See COMMERCIAL_LICENSE.md
+      - Buy: https://poverenje-na-tronu.lemonsqueezy.com
+      - Or: https://6318682165690.gumroad.com/l/c-core-basys3-research
+
+MIT LICENSE TEXT (for Research/Personal only):
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+in the Software for RESEARCH, PERSONAL, AND EDUCATIONAL PURPOSES ONLY,
+including without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software for NON-COMMERCIAL
+PURPOSES ONLY, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+COMMERCIAL USE (any use for commercial advantage or monetary compensation,
+including but not limited to products, services, IP cores in commercial
+devices, space/medical/avionics applications) IS NOT GRANTED UNDER THIS
+LICENSE and requires a separate commercial license - see COMMERCIAL_LICENSE.md
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,3 +45,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+ZENODO CC BY-NC 4.0 ARCHIVE:
+
+This work is archived on Zenodo under Creative Commons Attribution-
+NonCommercial 4.0 International (CC BY-NC 4.0):
+
+- You may Share and Adapt for non-commercial purposes with attribution
+- Commercial use is prohibited without commercial license
+- Full license: https://creativecommons.org/licenses/by-nc/4.0/
+
+Citation:
+Govedarica, B. (2026). 3D Bojan: Recursive Majority Cascade Architecture.
+Zenodo. https://doi.org/10.5281/zenodo.23045369
+
+Govedarica, B. (2026). C-CORE + 3D Bojan - Balanced Ternary RAM 9x9.
+Zenodo. https://doi.org/10.5281/zenodo.23324784
