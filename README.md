@@ -9,7 +9,7 @@ Used in C-CORE product: https://6318682165690.gumroad.com/l/c-core-basys3-resear
 
 **Board:** Digilent Basys 3
 **FPGA:** Artix-7 xc7a35tcpg236-1
-**License:** MIT
+**License:** 【entity-MIT¦canonical_name=MIT】 (Research/Personal) + CC BY-NC 4.0 (Zenodo) - Commercial requires license - see COMMERCIAL_LICENSE.md
 **Language:** VHDL / Verilog
 
 ### Dual-DOI Protection
