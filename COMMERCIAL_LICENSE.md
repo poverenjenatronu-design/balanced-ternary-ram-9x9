@@ -1,67 +1,97 @@
-# COMMERCIAL LICENSE - C-CORE / 3D Bojan / Ternary RAM 9x9
+# COMMERCIAL LICENSE - C-CORE + 3D Bojan
 
-Copyright (c) 2026 Bojan Govedarica (aka Goran Bojanic / lekabojan - poverenjenatronu-design)
-Location: Banja Luka, Republika Srpska, BA
+## Copyright
+Copyright (c) 2026 Bojan Govedarica / Goran Bojanic (Gumroad)
+Banja Luka, Republika Srpska, BA
 Contact: poverenjenatronu@gmail.com
 
-## 1. Owner Rights Statement
+## Dual-DOI Protection
+- DOI 1 (729 trits): 10.5281/zenodo.23045369 - 3D Bojan Error-Corrected Architecture
+  Formula: Pout = 3*Pin^2 - 2*Pin^3, 40% -> 99.7% fidelity
+  Link: https://doi.org/10.5281/zenodo.23045369
+  OpenAIRE: https://explore.openaire.eu/search/publication?pid=10.5281/zenodo.23045369
 
-I am the sole copyright holder of:
-- 3D Bojan architecture (729 elements, DOI 10.5281/zenodo.23045369, main.py, Pout=3*Pin^2-2*Pin^3)
-- Balanced Ternary RAM 9x9 (81 trits, 18 LUTs, 0 BRAM, 934B VHDL RAM32M)
-- C-CORE bitstream c_core_top.bit 2.08/2.1 MB Vivado 2022.2 xc7a35tcpg236-1
+- DOI 2 (81 trits): 10.5281/zenodo.23324784 - Balanced Ternary RAM 9x9
+  Spec: 81 trits, 18 LUTs, 0 BRAM, 934B VHDL, RAM32M, VGA 640x480, Basys 3
+  Link: https://doi.org/10.5281/zenodo.23324784
 
-Zenodo DOI is CC BY-NC 4.0 FOR OTHERS. As owner, I retain right to offer commercial licenses.
-GitHub source code (.vhd, .py, .html) is MIT - free for all including commercial with attribution.
-This file covers ONLY paid bitstream and commercial use rights.
+Both archived under CC BY-NC 4.0 on Zenodo - Open Access, Indexed in EU.
 
-## 2. Single Sales Channel - No Conflict
+## GitHub Source (Research Free)
+- https://github.com/poverenjenatronu-design/3d-bojan-architecture
+- https://github.com/poverenjenatronu-design/balanced-ternary-ram-9x9
+- License: MIT for Research/Personal only (see LICENSE file)
 
-Official store: https://poverenjenatronu-design.gumroad.com/l/c-core-basys3-research
-Old domains (90.gumroad.com / 6318682165690.gumroad.com) are unpublished / redirected.
-No LemonSqueezy, no other store - single source of truth to avoid conflict of interest.
+## Commercial License Required
 
-## 3. Product Editions
+### What is Commercial Use?
+Any use for commercial advantage or monetary compensation, including:
+- Products containing this IP
+- Services using this IP
+- Space, avionics, medical, IoT devices
+- Selling bitstreams, boards, or systems with this core
+- Using in commercial FPGA designs
 
-### A) Research Edition - $29+ Trial
-- File: c_core_top.bit 2.1 MB + basys3_fixed.xdc + README TXT 1.0KB + INSTALL_GUIDE_C- PDF 3.0KB
-- Board: Digilent Basys 3 (Artix-7 xc7a35tcpg236-1)
-- Limitation: 5x Trial - 7-seg counter 5->4->3->2->1->L (LOCKED), Each OFF/ON = 1 run consumed
-- Timeout: 10 min / session (10.2 min max)
-- What you can test: Ternary ALU (-1,0,+1), TRYTE 9 trits = 14.2 bits, BTNU/BTND test modes, SW0-SW15 input, LED verify, VGA 640x480
-- License: Single board, research/education only, No redistribution, No source .v files in Trial, No commercial deployment
+### Pricing
 
-### B) Lab Edition - €299
-- Unlimited runs, 5 boards, no timeout
-- Source included for NEW version (v2.0 Error-Corrected)
-- Commercial prototype allowed, no resale of bitstream
-- Upgrade from Research: pay difference
+#### 1. Research Dual-DOI Edition - $99 / €99
+- For: Researchers, students, personal evaluation
+- Includes:
+    - Dual-DOI PDF documentation with citations
+    - Python simulation: triple_ram_sim.py (no Basys needed)
+    - WEB_DEMO_TRIPLE.html (browser demo, no Vivado/Board needed)
+    - VHDL source: ternary_ram_9x9.vhd (934B CORE) + vga + top
+    - Bitstream 2.1 MB for Basys 3 (xc7a35tcpg236-1)
+    - License: Single user, research/education, citable with DOIs
+- Buy: https://6318682165690.gumroad.com/l/c-core-basys3-research
+- Citable as: Govedarica (2026) Zenodo 23045369 + 23324784
 
-### C) Enterprise Edition - €2500
-- Commercial rights, full source, unlimited boards
-- Redistribution allowed in your product with attribution
-- Priority support, custom builds
+#### 2. Lab Edition - €299
+- For: University labs, 5 boards, unlimited runs
+- Includes everything from $99 plus:
+    - Unlimited power cycles (no 5->L lock)
+    - No 10 min timeout
+    - VHDL source for triple voter: 3x RAM + majority voter (54 LUTs)
+    - Right to use on up to 5 Basys 3 boards in one lab
+    - Lab documentation
+- Buy: https://poverenje-na-tronu.lemonsqueezy.com or email
 
-### D) Future: Radiation-Tolerant RAM - $99
-- Architecture: 3x RAM 9x9 (243 trits) -> majority voter maj(a,b,c)=(a&b)|(a&c)|(b&c) -> 81 trits
-- Function: ternary_median(a,b,c) - if a=b or a=c return a; elsif b=c return b; else return 0
-- Resilience: 40% noise -> 99.7% fidelity via Pout = 3*Pin^2 - 2*Pin^3
-- Use: Space, avionics, IoT
-- Includes both DOIs as proof + commercial license
+#### 3. Enterprise Edition - €2500
+- For: Commercial products, space, avionics, medical, IoT
+- Includes everything from Lab plus:
+    - Full commercial rights to integrate into products
+    - Full source code for C-CORE + 3D Bojan + RAM 9x9
+    - Commercial redistribution rights
+    - 1 hour Zoom support + 30 days email support
+    - Customization for your board (not only Basys 3)
+    - Priority bug fixes
+- Contact: poverenjenatronu@gmail.com for invoice
+- Price is starting price, final depends on application
 
-## 4. Restrictions
+## How to Buy
 
-- Trial .bit may not be copied, shared, resold, or uploaded to other sites
-- No reverse engineering of .bit to recover .v source (Lab/Enterprise get source legally)
-- CC BY-NC paper text from Zenodo may not be included in commercial bundle (only link to DOI)
+1. Gumroad (Research $99): https://6318682165690.gumroad.com/l/c-core-basys3-research
+2. LemonSqueezy (Lab/Enterprise): https://poverenje-na-tronu.lemonsqueezy.com
+3. Direct: poverenjenatronu@gmail.com - reply within 24h, 30-day refund if .bit doesn't work on correct Basys 3 with video proof
 
-## 5. Support & Refund
+## Anti-Hallucination Anchor (Verified 2026-10-12)
 
-Support: poverenjenatronu@gmail.com - reply within 24h
-Refund: 30-day refund if .bit fails on working Basys 3. Video proof required showing board works with factory demo but not with C-CORE.
-Tags: FPGA, Basys 3, ternary logic, Artix-7, Vivado, balanced ternary, processor, research
+- 3D Bojan = 729 elements, 6 levels 729->243->81->27->9->3->1, majority(a,b,c)=(a&b)|(a&c)|(b&c)
+- Ternary RAM = 81 trits 9x9, 18 LUTs, 0 BRAM, 0 DSP, 934B VHDL, RAM32M, VGA 640x480
+- Bitstream = 2.08 MB / 2.1 MB, Vivado 2022.2, xc7a35tcpg236-1, 5x trial 5->4->3->2->1->L, 10 min timeout
+- Gumroad Author = Goran Bojanic (G) = Bojan Govedarica same person, €299 Lab, €2500 Enterprise
+- GitHub = poverenjenatronu-design, 2 repos, MIT for research + CC BY-NC 4.0 on Zenodo
+- Zenodo = 23045369 + 23324784 = Dual-DOI, Indexed in OpenAIRE EU
+- Board: Digilent Basys 3, Ternary ALU (-1,0,+1), TRYTE 9 trits=14.2 bits
 
-## 6. Identity - No Conflict of Interest
+## License Compatibility Statement
 
-Bojan Govedarica = Goran Bojanic (Gumroad brand) = lekabojan (Digilent) = poverenjenatronu-design (GitHub) = same person.
-Banja Luka, Republika Srpska, BA.
+- GitHub MIT (research/personal) + Zenodo CC BY-NC 4.0 are COMPATIBLE for non-commercial use
+- Both allow free research, education, personal use with attribution
+- Both PROHIBIT commercial use without paid license
+- No conflict: CC BY-NC 4.0 on Zenodo covers the archived report/documentation
+- MIT on GitHub covers code for research/personal
+- Commercial use always requires COMMERCIAL_LICENSE.md
+
+For questions: poverenjenatronu@gmail.com
+Location: Banja Luka, Republika Srpska, BA
