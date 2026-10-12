@@ -31,7 +31,7 @@ C-CORE + 3D BOJAN - MERGED TREE
 │   ├── A) 3D Bojan (729 elements, majority voting) -> github.com/poverenjenatronu-design/3d-bojan-architecture -> DOI 10.5281/zenodo.23045369 -> main.py
 │   └── B) Ternary RAM 9x9 (81 trits, 18 LUTs) -> github.com/poverenjenatronu-design/balanced-ternary-ram-9x9 -> ternary_ram_9x9.vhd 934B + vga + top + WEB_DEMO.html
 ├── 2. ZENODO - ACADEMIC PROOF -> DOI 10.5281/zenodo.23045369 - CC BY-NC 4.0 for paper text
-├── 3. GUMROAD - SALES -> https://poverenjenatronu-design.gumroad.com/l/c-core-basys3-research -> $29 Trial 2.1MB 5x power cycles 10min/session + $299 Lab + $2500 Enterprise
+├── 3. GUMROAD - SALES -> https://6318682165690.gumroad.com/l/c-core-basys3-research -> $29 Trial 2.1MB 5x power cycles 10min/session + $299 Lab + $2500 Enterprise
 ├── 4. HACKADAY + DIGILENT - MARKETING -> Hackaday.io 206946 + Digilent Forum lekabojan 15:21 LIVE
 └── 5. MERGE GOAL - $99 Radiation-Tolerant RAM -> 3x RAM (243 trits) -> median voter -> 81 trits
 
