@@ -1,13 +1,13 @@
 # C-CORE + 3D Bojan - Balanced Ternary RAM 9x9
 
-[[DOI 3D Bojan](https://zenodo.org/badge/DOI/10.5281/zenodo.23045369.svg)](https://doi.org/10.5281/zenodo.23045369)
-[[Board](https://img.shields.io/badge/Board-Digilent%20Basys%203-blue)](https://digilent.com/shop/basys-3-artix-7-fpga-trainer-board/)
-[[FPGA](https://img.shields.io/badge/FPGA-Artix--7%20xc7a35tcpg236--1-green)](https://www.xilinx.com/products/silicon-devices/fpga/artix-7.html)
-[[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI 3D Bojan](https://zenodo.org/badge/DOI/10.5281/zenodo.23045369.svg)](https://doi.org/10.5281/zenodo.23045369)
+[![Board](https://img.shields.io/badge/Board-Digilent%20Basys%203-blue)](https://digilent.com/shop/basys-3-artix-7-fpga-trainer-board/)
+[![FPGA](https://img.shields.io/badge/FPGA-Artix--7%20xc7a35tcpg236--1-green)](https://www.xilinx.com/products/silicon-devices/fpga/artix-7.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Author:** Bojan Govedarica  
 **Brand / Gumroad:** Goran Bojanic (same person)  
-**GitHub:** [poverenjenatronu-design](https://github.com/poverenjenatronu-design)  
+**【entity-GitHub¦canonical_name=GitHub】:** [poverenjenatronu-design](https://github.com/poverenjenatronu-design)  
 **Digilent Forum:** [lekabojan](https://forum.digilent.com/profile/lekabojan/)  
 **Contact:** poverenjenatronu@gmail.com - reply within 24h  
 **Location:** Banja Luka, Republika Srpska, BA
@@ -61,13 +61,11 @@ Vivado 2022.2, xc7a35tcpg236-1
 
 ## 5. Roadmap - $99 Error-Corrected Radiation-Tolerant
 
-Correct ternary majority (NOT binary (a&b)|(a&c)|(b&c)):
-
 function ternary_median(a,b,c: trit) return trit is
 begin
   if (a=b) or (a=c) then return a;
   elsif (b=c) then return b;
-  else return 0; -- -1,0,+1 median
+  else return 0;
   end if;
 end function;
 
@@ -80,18 +78,18 @@ GitHub RAM: https://github.com/poverenjenatronu-design/balanced-ternary-ram-9x9
 Zenodo: https://doi.org/10.5281/zenodo.23045369
 Hackaday: https://hackaday.io/project/206946-balanced-ternary-ram-9x9
 Gumroad: https://poverenjenatronu-design.gumroad.com/l/c-core-basys3-research
-Digilent Forum: https://forum.digilent.com/profile/lekabojan/
+Digilent: https://forum.digilent.com/profile/lekabojan/
 
 ## 7. License - FIXED NO CONFLICT 2026-10-12
 
-MIT License
-Copyright (c) 2026 Bojan Govedarica (aka Goran Bojanic / lekabojan)
-Code (.vhd, .py): FREE for any use including commercial, credit required
-Paper text on Zenodo: CC BY-NC 4.0
-Commercial bundle (.bit + support + warranty): Paid on Gumroad
-$29 Trial single board no redistribution no .v source in Trial
-€299 Lab 5 boards unlimited NEW source error-corrected
-€2500 Enterprise commercial rights full source
+I, Bojan Govedarica (aka Goran Bojanic / lekabojan - poverenjenatronu-design) am sole copyright holder.
+
+- Source code (.vhd 934B, .py, .html): MIT License - FREE for any use including commercial, credit required. File LICENSE is pure MIT
+- Paper text on Zenodo DOI 10.5281/zenodo.23045369: CC BY-NC 4.0 FOR OTHERS - others cannot sell it. As owner I can re-license commercially on Gumroad
+- Bitstream (.bit 2.1 MB): NOT MIT, paid commercial product. Single sales channel: poverenjenatronu-design.gumroad.com/l/c-core-basys3-research
+  $29 Trial: single board, research/education only, No redistribution, No .v source in Trial, 5x 5->L 10min
+  €299 Lab: 5 boards unlimited + NEW error-corrected source
+  €2500 Enterprise: commercial rights full source
 
 ## 8. Citation
 
