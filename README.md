@@ -1,5 +1,6 @@
 # C-CORE + 3D Bojan - Balanced Ternary RAM 9x9
 
+Used in C-CORE product:https://6318682165690.gumroad.com/l/c-core-basys3-research
 [![DOI 3D Bojan](https://zenodo.org/badge/DOI/10.5281/zenodo.23045369.svg)](https://doi.org/10.5281/zenodo.23045369)
 [![Board](https://img.shields.io/badge/Board-Digilent%20Basys%203-blue)](https://digilent.com/shop/basys-3-artix-7-fpga-trainer-board/)
 [![FPGA](https://img.shields.io/badge/FPGA-Artix--7%20xc7a35tcpg236--1-green)](https://www.xilinx.com/products/silicon-devices/fpga/artix-7.html)
