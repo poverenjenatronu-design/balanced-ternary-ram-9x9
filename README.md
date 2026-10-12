@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23324784.svg)](https://doi.org/10.5281/zenodo.23324784)
 # C-CORE + 3D Bojan - Balanced Ternary RAM 9x9
 
 Used in C-CORE product:https://6318682165690.gumroad.com/l/c-core-basys3-research
