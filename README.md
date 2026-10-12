@@ -23,6 +23,9 @@ Used in C-CORE product: https://6318682165690.gumroad.com/l/c-core-basys3-resear
 - 40% -> 99.7% fidelity (3D Bojan formula)
 - Radiation-tolerant, suitable for space / medical
 
+## 💰 Buy $99 Research Dual-DOI Edition
+**Gumroad:** https://6318682165690.gumroad.com/l/ebwjxl - LICENSE FIXED v2.3 - OpenAIRE Indexed!
+
 ### Author
 **Author:** Bojan Govedarica
 **Brand / Gumroad:** Goran Bojanic (same person)
