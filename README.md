@@ -13,8 +13,8 @@ Used in C-CORE product: https://6318682165690.gumroad.com/l/c-core-basys3-resear
 **Language:** VHDL / Verilog
 
 ### Dual-DOI Protection
-- **DOI 1 (729 trits):** 10.5281/zenodo.23045369 - 3D Bojan Error-Corrected Architecture Pout=3*Pin^2-2*Pin^3
-- **DOI 2 (81 trits):** 10.5281/zenodo.23324784 - Balanced Ternary RAM 9x9
+- - **DOI 1 (729 binary bits 0/1):** 10.5281/zenodo.23045369 - 3D Bojan Error-Corrected Architecture Pout=3*Pin^2-2*Pin^3 - BINARY ONLY
+- **DOI 2 (81 trits -1,0,+1):** 10.5281/zenodo.23324784 - Balanced Ternary RAM 9x9 - TERNARY STORAGE
 ## Binary vs Ternary - How C-CORE Works
 
 **Storage (Ternary):** -1,0,+1 encoded as 00=-1 BLACK 01=0 GRAY 10=1 WHITE (11 unused)
