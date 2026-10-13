@@ -15,7 +15,21 @@ Used in C-CORE product: https://6318682165690.gumroad.com/l/c-core-basys3-resear
 ### Dual-DOI Protection
 - **DOI 1 (729 trits):** 10.5281/zenodo.23045369 - 3D Bojan Error-Corrected Architecture Pout=3*Pin^2-2*Pin^3
 - **DOI 2 (81 trits):** 10.5281/zenodo.23324784 - Balanced Ternary RAM 9x9
+## Binary vs Ternary - How C-CORE Works
 
+**Storage (Ternary):** -1,0,+1 encoded as 00=-1 BLACK 01=0 GRAY 10=1 WHITE (11 unused)
+- 81 trits 9x9 = 162 bits, 18 LUTs 0 BRAM, RAM32M, Basys 3 xc7a35tcpg236-1
+- Files: ternary_ram_9x9.vhd 934B CORE + vga 2.7KB + top 1.16KB
+
+**Protection (Binary):** from 3D Bojan repo
+- Binary voter: (a&b)|(a&c)|(b&c)
+- Ternary voter: majority_ternary(a,b,c) = a if a==b or a==c else b
+
+**C-CORE v2.7 Architecture:**
+3x RAM 9x9 (243 trits) -> ENCODE to 486 bits -> 2x binary majority per bit -> DECODE -> 81 trits
+40% noise -> 99.7% via Pout=3Pin^2-2Pin^3
+
+Dual-DOI: 23045369 + 23324784 - OpenAIRE Indexed
 ### Features
 - 81 trits storage (9x9 matrix)
 - 18 LUTs only, 0 BRAM, 0 DSP
