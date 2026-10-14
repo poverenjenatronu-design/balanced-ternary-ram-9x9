@@ -1,81 +1,24 @@
-C-CORE Research License v2.3 - Based on 【entity-MIT¦canonical_name=MIT】 - Non-Commercial
-Dual-Licensed with CC BY-NC 4.0 on Zenodo
+Research License v2.7 NON-COMMERCIAL
 
-Copyright (c) 2026 Bojan Govedarica
-Banja Luka, Republika Srpska, BA
+Copyright (c) 2026 Bojan Govedarica (Brand: Goran Bojanic)
+
+PERMITTED:
+- Research, academic, personal, non-commercial use - FREE
+- Modification for research purposes
+- Distribution with attribution, non-commercial
+
+NOT PERMITTED WITHOUT COMMERCIAL LICENSE:
+- Commercial use in products, services, or production
+- Selling, sublicensing, or using in commercial FPGA/ASIC
+- Use by companies, enterprises, or for profit
+
+COMMERCIAL LICENSE REQUIRED FOR:
+Any commercial application. Buy here:
+https://poverenje-na-tronu.lemonsqueezy.com
+
 Contact: poverenjenatronu@gmail.com
+Zenodo: CC BY-NC 4.0 International (v2+)
+DOI: 10.5281/zenodo.23045369 and 10.5281/zenodo.23324784
+Note: Zenodo v1 was MIT (1 download), v2+ is CC BY-NC 4.0
 
-DUAL-LICENSE MODEL:
-
-1. RESEARCH / PERSONAL / EDUCATION: FREE
-      - GitHub: Research License (【entity-MIT¦canonical_name=MIT】-based, non-commercial)
-      - Zenodo: CC BY-NC 4.0
-      - DOI 1: 10.5281/zenodo.23045369 - 3D Bojan 729 elements
-      - DOI 2: 10.5281/zenodo.23324784 - Ternary RAM 9x9 81 trits
-      - OpenAIRE: https://explore.openaire.eu/search/publication?pid=10.5281/zenodo.23045369
-      - Badge 1: https://zenodo.org/badge/DOI/10.5281/zenodo.23045369.svg
-      - Badge 2: https://zenodo.org/badge/DOI/10.5281/zenodo.23324784.svg
-
-2. COMMERCIAL USE: REQUIRES PAID LICENSE
-      - You MUST buy commercial license before commercial use
-      - See COMMERCIAL_LICENSE.md
-      - Lab €299: https://poverenje-na-tronu.lemonsqueezy.com
-      - Research $99: https://6318682165690.gumroad.com/l/ebwjxl
-      - Trial $29: https://6318682165690.gumroad.com/l/c-core-basys3-research
-
-RESEARCH LICENSE TEXT (Based on MIT, Non-Commercial Clause):
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software for RESEARCH, PERSONAL, AND EDUCATIONAL PURPOSES ONLY,
-including without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software for NON-COMMERCIAL
-PURPOSES ONLY, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-COMMERCIAL USE (any use for commercial advantage or monetary compensation,
-including but not limited to products, services, IP cores in commercial
-devices, space/medical/avionics applications, radiation-tolerant systems) 
-IS NOT GRANTED UNDER THIS LICENSE and requires a separate commercial license 
-- see COMMERCIAL_LICENSE.md
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-ZENODO CC BY-NC 4.0 ARCHIVE:
-
-This work is archived on Zenodo under Creative Commons Attribution-
-NonCommercial 4.0 International (CC BY-NC 4.0):
-
-- You may Share and Adapt for non-commercial purposes with attribution
-- Commercial use is prohibited without commercial license
-- Full license: https://creativecommons.org/licenses/by-nc/4.0/
-
-Citation:
-Govedarica, B. (2026). 3D Bojan: Recursive Majority Cascade Architecture.
-Zenodo. https://doi.org/10.5281/zenodo.23045369
-OpenAIRE: https://explore.openaire.eu/search/publication?pid=10.5281/zenodo.23045369
-
-Govedarica, B. (2026). C-CORE + 3D Bojan - Balanced Ternary RAM 9x9.
-Zenodo. https://doi.org/10.5281/zenodo.23324784
-
-GUMROAD LICENSE ALIGNMENT:
-
-- $29 Trial (c-core-basys3-research): Single board, research/education only,
-  No redistribution of .bit, No .v source files, 5x power cycles limit demo
-- $99 Research (ebwjxl): Unlimited single user, source included, Research License
-- €299 Lab: 5 boards unlimited + triple voter source + full source
-- €2500 Enterprise: Commercial rights + radiation report + support
-
-Author: Bojan Govedarica / Goran Bojanic (Gumroad same person) - Banja Luka RS BA
-Status: DUAL-DOI ACTIVE + LICENSE FIXED v2.3 + GUMROAD $99 LIVE + OpenAIRE Indexed
-
-From Gacko (9k pop) to OpenAIRE in 4h 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
